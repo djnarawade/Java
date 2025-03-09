@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="jquerry.js"></script>
+    <audio id="alarm" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+
+
+    <title>Countdown Timer</title>
+</head>
+<style>
+   button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    font-size: 26px ;
+    
+   .time {
+    font-size: 100px;
+   }
+</style>
+<body>
+    <span class="time" id="hours">
+        00 :
+    </span>
+
+    <span class="time" id="minutes">
+        00 :
+    </span>
+
+    <span class="time" id="seconds">
+        00
+    </span>
+
+    <button id="startbtn">Start</button>
+    <button id="resetbtn">Reset</button>
+
+    <input type="number" id="setHours" min="0" max="23" value="0">
+    <input type="number" id="setMinutes" min="0" max="59" value="25">
+    <input type="number" id="setSeconds" min="0" max="59" value="0">
+
+</body>
+</html>
