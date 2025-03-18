@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap.min.css"
+    />
+    <!-- Materialize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Image and Centered Content -->
+    <div class="hero-section text-center">
+      <img
+        src="https://www.w3schools.com/w3images/mountains.jpg"
+        alt="Movie Theme"
+        class="img-fluid hero-img"
+      />
+      <div class="overlay">
+        <header class="text-white">
+          <h1 class="display-4 font-weight-bold">
+            Discover Movies with TMDb API
+          </h1>
+          <p class="lead">
+            Search for your favorite movies, explore their details, posters, and
+            more!
+          </p>
+          <form id="search-form" class="d-flex justify-content-center mt-4">
+            <input
+              type="text"
+              id="search-query"
+              class="form-control w-50 search-input"
+              placeholder="Search for a movie..."
+            />
+            <button type="submit" class="btn btn-primary ms-2 search-btn">
+              Search
+            </button>
+          </form>
+        </header>
+      </div>
+    </div>
+
+    <!-- Movie Results Section -->
+    <div class="container mt-5">
+      <div id="movie-results" class="row">
+        <!-- Movie cards will be added here dynamically -->
+      </div>
+    </div>
+
+    <!-- Bootstrap and Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
